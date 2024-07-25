@@ -95,7 +95,8 @@ export const SKILLS = [
 export type Skill = (typeof SKILLS)[number];
 
 export const TIMELINE = [
-  { date: "Mar, 2022", title: "Markdown is supported", content: "Events alternate by default..." },
+  { date: "Apr, 2013", title: "Started Jnex Soft", content: "Working with multiple clients as a contractor." },
+  { date: "Apr, 2018", title: "Heyooo Inc", content: "Worked with heyooo as a CTO" },
   { date: "Mar, 2022", title: "Markdown is supported", content: "Events alternate by default..." },
   { date: "Mar, 2022", title: "Markdown is supported", content: "Events alternate by default..." },
   { date: "Mar, 2022", title: "Markdown is supported", content: "Events alternate by default..." },

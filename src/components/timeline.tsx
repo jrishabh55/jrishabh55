@@ -33,15 +33,15 @@ const TimelineItem: FC<TimelineItemProps> = ({ event, isLeftAligned }) => {
       <div className={`flex flex-1 ${isLeftAligned ? "flex-row-reverse" : "flex-row"}`}>
         <div className={`flex items-center ${isLeftAligned ? "flex-row-reverse" : "flex-row"}`}>
           <div
-            className={`mx-4 flex-1 rounded-lg px-6 py-4 shadow-sm shadow-slate-500 ${isLeftAligned ? "ml-8" : "mr-8"}`}
+            className={`mx-4 flex-1 rounded-lg px-6 py-4 shadow-sm shadow-slate-500 ${isLeftAligned ? "ml-8" : "mr-8"} backdrop-blur-xl`}
           >
-            <h3 className="mb-2 text-lg font-semibold">{event.title}</h3>
-            <p>{event.content}</p>
+            <h3 className="mb-2 text-lg font-light">{event.title}</h3>
+            <p className="text-xs font-light">{event.content}</p>
           </div>
           <div
-            className={`order-2 flex aspect-square items-center justify-center rounded-full bg-yellow-800/50 p-2 ${isLeftAligned ? "ml-4" : "mr-4"}`}
+            className={`order-2 flex aspect-square items-center justify-center rounded-full border border-slate-500/50 p-3 shadow-md shadow-slate-300/30 backdrop-blur-xl ${isLeftAligned ? "ml-4" : "mr-4"}`}
           >
-            <span className="text-sm text-white">{event.date}</span>
+            <span className="text-xs text-white">{event.date}</span>
           </div>
         </div>
       </div>

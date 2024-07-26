@@ -1,18 +1,16 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Header } from "./header";
-import Timeline from "./timeline";
+import { PROFILE } from "@/config";
+import { Metadata } from "next";
+import Link from "next/link";
+import About from "./about";
 import Footer from "./footer";
 import GetInTouch from "./getInTouch";
-import Testimonials from "./Testimonials";
-import About from "./about";
-import PortfolioComponent from "./portfolioComponent";
+import { Header } from "./header";
+import PortfolioSection from "./PortfolioSection";
 import Skills from "./skills";
-import Link from "next/link";
-import { Metadata } from "next";
-import { PROFILE } from "@/config";
+import Testimonials from "./Testimonials";
+import Timeline from "./timeline";
 
 export const metadata: Metadata = {
   title: "Rishabh Jain | Software Engineer",
@@ -28,7 +26,7 @@ export function Portfolio() {
         <div className="absolute inset-0 z-[-1]">
           <div className="h-full w-full" />
         </div>
-        <Avatar className="animate-hovering mb-4 h-40 w-40">
+        <Avatar className="mb-4 h-40 w-40 animate-hovering">
           <AvatarImage src={PROFILE.avatar} />
           <AvatarFallback>{PROFILE.name}</AvatarFallback>
         </Avatar>
@@ -47,7 +45,7 @@ export function Portfolio() {
       <About />
       <main className="flex flex-col">
         <Skills />
-        <PortfolioComponent />
+        <PortfolioSection />
         <Timeline />
         <Testimonials />
         <GetInTouch />

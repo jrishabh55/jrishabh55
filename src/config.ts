@@ -1,3 +1,4 @@
+import { link } from "fs";
 import { Metadata } from "next";
 
 export const PROFILE = {
@@ -95,12 +96,47 @@ export const SKILLS = [
 export type Skill = (typeof SKILLS)[number];
 
 export const TIMELINE = [
-  { date: "Apr, 2013", title: "Started Jnex Soft", content: "Working with multiple clients as a contractor." },
+  { date: "Apr, 2013", title: "Founded JnexSoft", content: "Working with multiple clients as a contractor." },
   { date: "Apr, 2018", title: "Heyooo Inc", content: "Worked with heyooo as a CTO" },
-  { date: "Mar, 2022", title: "Markdown is supported", content: "Events alternate by default..." },
-  { date: "Mar, 2022", title: "Markdown is supported", content: "Events alternate by default..." },
-  { date: "Mar, 2022", title: "Markdown is supported", content: "Events alternate by default..." },
-] as const;
+  {
+    date: "Mar, 2021",
+    title: "Recro",
+    content: "Starting working with recro, it was a great chance to work with different companies.",
+  },
+  {
+    date: "Mar, 2021",
+    title: "PayU | Recro",
+    content: "Worked with the famous payment processor payu on the frontend side.",
+  },
+  {
+    date: "May, 2021",
+    title: "ZS | Innovatorsbay",
+    content:
+      "Worked with ZS on a short term contractor. It was an amazing experience working with the team and building dashboards and tools for them.",
+  },
+  {
+    date: "May, 2021",
+    title: "Innovatorsbay",
+    content: "Partnered with Innovatorsbay to work on some great projects.",
+  },
+  { date: "Jan, 2022", title: "CureFit | Recro", content: "Worked with curefit the well known gym brand." },
+  {
+    date: "May, 2022",
+    title: "Verse | Recro",
+    content:
+      "I'm sure you've seen the app DailyHunt (formally NewsHunt). I got the privilege to consult for them and the parent company Verse",
+  },
+  {
+    date: "Sep, 2022",
+    title: "Mindtickle | Recro",
+    content: "Mindticke is a great B2B platform for training employees.",
+  },
+  {
+    date: "Sep, 2022",
+    title: "Qubertech | Recro",
+    content: "Mindticke is a great B2B platform for training employees.",
+  },
+].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
 export type TimelineEvent = (typeof TIMELINE)[number];
 
@@ -154,3 +190,43 @@ export const TESTIMONIALS = [
 ];
 
 export type Testimonial = (typeof TESTIMONIALS)[number];
+
+export const PORTFOLIO = [
+  {
+    title: "Snap IT",
+    description: "Project aims to provide a platform for users to share their code via images.  ",
+    image: "/projects/snapit.png",
+    link: "https://snapit.vercel.app/",
+  },
+  {
+    title: "G2OpenBook",
+    description: `
+        G2 OpenBook is a comprehensive communication and management platform designed to streamline school operations and enhance collaboration among stakeholders. It connects principals, teachers, administrators, and parents, fostering a transparent and integrated learning environment.
+          Key benefits:
+          Principals gain real-time insights into school activities, enabling data-driven decision-making and improved administrative efficiency.
+          Parents stay informed about their child's academic progress, attendance, homework, and extracurricular activities, fostering active involvement in their education.
+          Teachers can efficiently manage student records, lesson plans, and assignments, while also gaining insights into individual student needs and talents.
+          Administrators can easily monitor school safety, security, finances, and academic performance, ensuring a well-rounded and secure learning environment.
+          Dedicated School Administration Portal: The platform's comprehensive portal provides administrators with powerful tools for managing student and staff information, attendance, leave requests, class schedules, school calendars, and much more.
+
+          G2 OpenBook simplifies school management, strengthens communication, and empowers all stakeholders to work together towards a common goal: the success and well-being of every student.`,
+    shortDescription:
+      "G2 OpenBook is a comprehensive school management platform that streamlines communication, enhances collaboration, and empowers all stakeholders to actively participate in a child's education.",
+    image: "/projects/openbook_logo.png",
+  },
+  {
+    title: "G2OpenMind",
+    description: `G2 OpenMind is a comprehensive communication and networking platform designed to streamline college management and foster a collaborative learning environment. It seamlessly connects key stakeholders, including the Dean, Faculty, Administration, and Students, enabling efficient communication and data-driven decision-making.
+    Empowering the Dean: G2 OpenMind provides the Dean with a holistic view of college operations, offering insights into academic performance, student engagement, and administrative efficiency. This transparency allows for informed decision-making and strategic planning to enhance the overall college experience.
+    Student-Centric Approach: Students benefit from real-time access to their academic records, attendance, and personalized feedback. G2 OpenMind also facilitates seamless communication with faculty and peers, fostering a vibrant learning community and enhancing student engagement.
+    Faculty Efficiency: Faculty members can leverage G2 OpenMind to manage course materials, assignments, and grades efficiently. The platform also streamlines communication with students, enabling personalized guidance and support for academic success.
+    Efficient Administration: G2 OpenMind empowers the college administration with tools to manage resources, track finances, and ensure campus safety and security. This streamlined approach enhances operational efficiency and allows administrators to focus on strategic initiatives.
+    Dedicated College Administration Portal: The College Admin portal offers a comprehensive suite of features, including student and faculty directories, attendance and leave management, course scheduling, academic calendars, and more. This centralized hub simplifies administrative tasks and improves overall efficiency.
+    G2 OpenMind revolutionizes college management by promoting transparency, collaboration, and data-driven decision-making. By connecting key stakeholders and providing them with the necessary tools and insights, G2 OpenMind creates a thriving academic environment where students can excel and institutions can flourish.`,
+    shortDescription:
+      "G2 OpenMind is a comprehensive college app designed to streamline communication and collaboration between students, faculty, and administrators. It provides a centralized platform for accessing academic information, managing course materials, and facilitating seamless interaction within the college community.",
+    image: "/projects/college.png",
+  },
+];
+
+export type Portfolio = (typeof PORTFOLIO)[number];

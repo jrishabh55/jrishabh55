@@ -36,7 +36,7 @@ const TimelineItem: FC<TimelineItemProps> = ({ event, isLeftAligned }) => {
             className={`mx-4 flex-1 rounded-lg px-6 py-4 shadow-sm shadow-slate-500 ${isLeftAligned ? "ml-8" : "mr-8"} backdrop-blur-xl`}
           >
             <h3 className="mb-2 text-lg font-light">{event.title}</h3>
-            <p className="text-xs font-light">{event.content}</p>
+            <p className="w-96 text-xs font-light">{event.content}</p>
           </div>
           <div
             className={`order-2 flex aspect-square items-center justify-center rounded-full border border-slate-500/50 p-3 shadow-md shadow-slate-300/30 backdrop-blur-xl ${isLeftAligned ? "ml-4" : "mr-4"}`}

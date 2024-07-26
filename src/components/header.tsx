@@ -7,7 +7,7 @@ export const Header = () => {
   return (
     <header className="flex items-center justify-between border-b border-border bg-foreground p-4 md:px-6">
       <div className="flex items-center gap-2">
-        <Image width={40} height={40} src="/placeholder.svg" alt="Logo" />
+        <Image width={40} height={40} src="/RJ Logo.webp" alt="Logo" />
         <span className="text-2xl font-bold">Rishabh Jain</span>
       </div>
       <nav className="hidden gap-6 md:flex">

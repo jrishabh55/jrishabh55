@@ -146,6 +146,12 @@ export const ABOUT =
 export const portfolioMetaData: Metadata = {
   title: `${PROFILE.name} | ${PROFILE.title}`,
   description: ABOUT,
+  authors: [
+    {
+      name: PROFILE.name,
+      url: "https://rishabhjain.dev",
+    },
+  ],
 };
 
 export const TESTIMONIALS = [

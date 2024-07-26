@@ -9,7 +9,7 @@ const Testimonial: FC<{ testimonial: Testimonial }> = ({ testimonial }) => (
       <AvatarFallback>{testimonial.name}</AvatarFallback>
     </Avatar>
     <div className="flex flex-grow flex-col gap-2 text-center">
-      <p className="mb-2 flex-grow text-sm text-gray-400">{testimonial.content}</p>
+      <p className="mb-2 w-full flex-grow text-justify text-sm text-gray-400 md:text-center">{testimonial.content}</p>
       <p className="font-medium">{testimonial.name}</p>
       <p className="text-gray-400">{testimonial.title}</p>
     </div>

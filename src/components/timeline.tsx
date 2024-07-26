@@ -7,7 +7,7 @@ type TimelineProps = {
 
 const Timeline: FC<TimelineProps> = ({ events = TIMELINE }) => {
   return (
-    <section>
+    <section className="hidden md:block">
       <h2 className="mb-4 text-3xl font-bold">Experience</h2>
       <div className="relative">
         <div className="absolute left-1/2 h-full -translate-x-1/2 transform border-l-2 border-slate-500/50"></div>

@@ -14,7 +14,7 @@ const PortfolioItem: FC<{ portfolio: Portfolio }> = ({ portfolio }) => {
   };
   return (
     <div
-      className={`flex flex-col ${!!portfolio.link ? "pointer" : ""} items-center gap-y-10`}
+      className={`flex flex-col ${!!portfolio.link ? "pointer" : ""} items-center gap-y-10 rounded-lg border border-slate-500/50 pb-4 pt-10 sm:border-0`}
       role="button"
       onClick={handleOpen}
     >
@@ -23,11 +23,14 @@ const PortfolioItem: FC<{ portfolio: Portfolio }> = ({ portfolio }) => {
         height={150}
         src={portfolio.image}
         alt={`Portfolio Image for ${portfolio.title}`}
-        className="my-auto rounded-md object-contain"
+        className="my-auto w-52 rounded-md object-contain md:w-40"
       />
-      <div className="mt-auto flex max-w-full flex-col gap-y-4 justify-self-end p-4 text-white backdrop-blur-xl">
+      <div className="mt-auto flex max-w-full flex-col gap-y-4 justify-self-end p-4 text-gray-200 backdrop-blur-xl">
         <h3 className="text-lg font-bold">{portfolio.title}</h3>
-        <p className="line-clamp-3" title={portfolio.shortDescription ?? portfolio.description}>
+        <p
+          className="text-sm text-gray-400 md:line-clamp-3"
+          title={portfolio.shortDescription ?? portfolio.description}
+        >
           {portfolio.shortDescription ?? portfolio.description}
         </p>
       </div>
@@ -39,7 +42,7 @@ export function PortfolioSection() {
   return (
     <section id="portfolio" className="flex flex-col">
       <h2 className="mb-4 text-3xl font-bold">Portfolio</h2>
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
         {PORTFOLIO.map((portfolio) => (
           <PortfolioItem key={portfolio.title} portfolio={portfolio} />
         ))}

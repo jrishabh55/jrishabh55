@@ -35,7 +35,7 @@ export const SKILLS = [
     title: "Postman",
   },
   {
-    logo: "https://pagepro.co/blog/wp-content/uploads/2020/03/react-native-logo-884x1024.png",
+    logo: "/icons/react.svg",
     title: "React Native",
   },
   {

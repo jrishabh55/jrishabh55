@@ -22,7 +22,7 @@ export function Portfolio() {
           <div className="h-full w-full" />
         </div>
         <Avatar className="mb-4 h-40 w-40 animate-hovering">
-          <AvatarImage src={PROFILE.avatar} alt={PROFILE.name} />
+          <AvatarImage alt={PROFILE.name} src={PROFILE.avatar} loading="eager" />
           <AvatarFallback>{PROFILE.name}</AvatarFallback>
         </Avatar>
         <h1 className="text-4xl font-bold">

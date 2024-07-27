@@ -12,11 +12,6 @@ import Skills from "./skills";
 import Testimonials from "./Testimonials";
 import Timeline from "./timeline";
 
-export const metadata: Metadata = {
-  title: "Rishabh Jain | Software Engineer",
-  description: "...",
-};
-
 export function Portfolio() {
   return (
     <div id="portfolio-container" className="flex flex-col px-4 text-white">
@@ -27,19 +22,17 @@ export function Portfolio() {
           <div className="h-full w-full" />
         </div>
         <Avatar className="mb-4 h-40 w-40 animate-hovering">
-          <AvatarImage src={PROFILE.avatar} />
+          <AvatarImage src={PROFILE.avatar} alt={PROFILE.name} />
           <AvatarFallback>{PROFILE.name}</AvatarFallback>
         </Avatar>
         <h1 className="text-4xl font-bold">
-          I{"'"}m <span className="text-yellow-400">Rishabh Jain</span>
+          I{"'"}m <span className="text-yellow-400">{PROFILE.name}</span>
         </h1>
-        <p className="text-lg">Sr Developer & Principal Consultant</p>
+        <p className="text-lg">{PROFILE.title}</p>
         <Button className="mt-4">Contact Me</Button>
         <div className="mt-4 flex select-auto gap-4">
-          <TwitterIcon className="h-6 w-6 text-gray-400 hover:text-white" />
-          <FacebookIcon className="h-6 w-6 text-gray-400 hover:text-white" />
           <LinkedinIcon className="h-6 w-6 text-gray-400 hover:text-white" />
-          <InstagramIcon className="h-6 w-6 text-gray-400 hover:text-white" />
+          <TwitterIcon className="h-6 w-6 text-gray-400 hover:text-white" />
         </div>
       </section>
       <About />
@@ -55,53 +48,9 @@ export function Portfolio() {
   );
 }
 
-function FacebookIcon(props: any) {
-  return (
-    <Link href="#">
-      <svg
-        {...props}
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-      </svg>
-    </Link>
-  );
-}
-
-function InstagramIcon(props: any) {
-  return (
-    <Link href="#">
-      <svg
-        {...props}
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-      </svg>
-    </Link>
-  );
-}
-
 function LinkedinIcon(props: any) {
   return (
-    <Link href="#">
+    <Link href="https://www.linkedin.com/in/jrishabh55/">
       <svg
         {...props}
         xmlns="http://www.w3.org/2000/svg"
@@ -124,7 +73,7 @@ function LinkedinIcon(props: any) {
 
 function TwitterIcon(props: any) {
   return (
-    <Link href="#">
+    <Link href="https://twitter.com/jrishabh55">
       <svg
         {...props}
         xmlns="http://www.w3.org/2000/svg"

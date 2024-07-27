@@ -4,7 +4,7 @@ import { Metadata } from "next";
 export const PROFILE = {
   name: "Rishabh Jain",
   email: "hello@rishabhjain.dev",
-  title: "Software Engineer",
+  title: "Sr Software Developer & Principal Consultant",
   avatar: "/person/rishabh-home-1x.webp",
 };
 
@@ -142,16 +142,26 @@ export type TimelineEvent = (typeof TIMELINE)[number];
 
 export const ABOUT =
   "A highly-skilled and results-oriented Senior Software Engineer with a passion for crafting innovative full-stack web applications. Extensive experience in frontend and backend technologies, including React, Node.js, databases (PostgreSQL, MySQL, MongoDB, Elasticsearch, CouchDB), and cloud functions (Lambda). Proven ability to lead teams, optimize performance, and deliver scalable solutions that exceed client expectations. Committed to staying at the forefront of technology and driving continuous improvement across the entire software development lifecycle.";
+export const DESCRIPTION =
+  "Hi, I'm a full-stack developer specializing in JavaScript/TypeScript, React/Angular/Next.js/React Native/Remix, Node.js/Python, and a variety of other front-end and back-end technologies. I'm passionate about crafting innovative web and mobile applications, exploring the world's diverse cultures, and enjoying life's simple pleasures like gaming.";
 
 export const portfolioMetaData: Metadata = {
   title: `${PROFILE.name} | ${PROFILE.title}`,
-  description: ABOUT,
+  description: DESCRIPTION,
   authors: [
     {
       name: PROFILE.name,
       url: "https://rishabhjain.dev",
     },
   ],
+  openGraph: {
+    images: [
+      {
+        url: "https://rishabhjain.dev/person/rishabh-home.webp",
+        alt: `${PROFILE.name} | ${DESCRIPTION}`,
+      },
+    ],
+  },
 };
 
 export const TESTIMONIALS = [

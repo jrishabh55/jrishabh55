@@ -226,7 +226,7 @@ export const PORTFOLIO = [
           G2 OpenBook simplifies school management, strengthens communication, and empowers all stakeholders to work together towards a common goal: the success and well-being of every student.`,
     shortDescription:
       "G2 OpenBook is a comprehensive school management platform that streamlines communication, enhances collaboration, and empowers all stakeholders to actively participate in a child's education.",
-    image: "/projects/openbook_logo.png",
+    image: "/projects/thumb_openbook_logo.webp",
   },
   {
     title: "G2OpenMind",
@@ -239,7 +239,7 @@ export const PORTFOLIO = [
     G2 OpenMind revolutionizes college management by promoting transparency, collaboration, and data-driven decision-making. By connecting key stakeholders and providing them with the necessary tools and insights, G2 OpenMind creates a thriving academic environment where students can excel and institutions can flourish.`,
     shortDescription:
       "G2 OpenMind is a comprehensive college app designed to streamline communication and collaboration between students, faculty, and administrators. It provides a centralized platform for accessing academic information, managing course materials, and facilitating seamless interaction within the college community.",
-    image: "/projects/college.png",
+    image: "/projects/thumb_college.webp",
   },
 ];
 

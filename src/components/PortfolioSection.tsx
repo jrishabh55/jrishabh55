@@ -19,11 +19,11 @@ const PortfolioItem: FC<{ portfolio: Portfolio }> = ({ portfolio }) => {
       onClick={handleOpen}
     >
       <Image
-        width={300}
-        height={150}
+        width={210}
+        height={210}
         src={portfolio.image}
         alt={`Portfolio Image for ${portfolio.title}`}
-        className="my-auto w-52 rounded-md object-contain md:w-40"
+        className="my-auto w-52 rounded-md object-contain md:w-52"
         loading="lazy"
       />
       <div className="mt-auto flex max-w-full flex-col gap-y-4 justify-self-end p-4 text-gray-200 backdrop-blur-xl">

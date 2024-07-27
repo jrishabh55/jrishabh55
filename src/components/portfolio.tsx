@@ -50,7 +50,7 @@ export function Portfolio() {
 
 function LinkedinIcon(props: any) {
   return (
-    <Link href="https://www.linkedin.com/in/jrishabh55/">
+    <Link href="https://www.linkedin.com/in/jrishabh55/" aria-label={`${PROFILE.name}'s linkedin profile`}>
       <svg
         {...props}
         xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +73,7 @@ function LinkedinIcon(props: any) {
 
 function TwitterIcon(props: any) {
   return (
-    <Link href="https://twitter.com/jrishabh55">
+    <Link href="https://twitter.com/jrishabh55" aria-label={`${PROFILE.name}'s twitter profile`}>
       <svg
         {...props}
         xmlns="http://www.w3.org/2000/svg"

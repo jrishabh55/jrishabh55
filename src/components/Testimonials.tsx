@@ -9,7 +9,7 @@ const Testimonial: FC<{ testimonial: Testimonial }> = ({ testimonial }) => (
       <AvatarFallback>{testimonial.name}</AvatarFallback>
     </Avatar>
     <div className="flex flex-grow flex-col gap-2 text-center">
-      <p className="mb-2 w-full flex-grow text-justify text-sm text-gray-400 md:text-center">{testimonial.content}</p>
+      <p className="mb-2 w-full flex-grow text-sm text-gray-400 md:text-left md:text-center">{testimonial.content}</p>
       <p className="font-medium">{testimonial.name}</p>
       <p className="text-gray-400">{testimonial.title}</p>
     </div>
@@ -17,7 +17,7 @@ const Testimonial: FC<{ testimonial: Testimonial }> = ({ testimonial }) => (
 );
 
 const Testimonials = () => (
-  <section className="p-8">
+  <section className="md:p-8">
     <h2 className="mb-4 text-3xl font-bold">Testimonial</h2>
     <main className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       {TESTIMONIALS.map((testimonial, index) => (

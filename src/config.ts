@@ -157,7 +157,7 @@ export const portfolioMetaData: Metadata = {
 export const TESTIMONIALS = [
   {
     name: "Sujit Thakur",
-    avatar: "/person/SujitThakur.jpeg",
+    avatar: "/person/SujitThakur.webp",
     title: "CEO & Founder, Deuglo",
     link: "https://www.deuglo.com/",
     content:
@@ -173,7 +173,7 @@ export const TESTIMONIALS = [
   },
   {
     name: "Siddharth Kothari",
-    avatar: "/person/SiddharthKothari.png",
+    avatar: "/person/SiddharthKothari.webp",
     title: "CEO, Reactive Search",
     link: "https://www.reactivesearch.io/",
     content:
@@ -181,13 +181,13 @@ export const TESTIMONIALS = [
   },
   {
     name: "Priyanka",
-    avatar: "/person/placeholder.png",
+    avatar: "/person/placeholder.webp",
     title: "Marketing Director, E-commerce Startup",
     content: "Rishabh and the team did amazing work, I will definitely hire them again.",
   },
   {
     name: "Mili",
-    avatar: "/person/placeholder.png",
+    avatar: "/person/placeholder.webp",
     title: "Marketing Director, E-commerce Startup",
     content: "Rishabh is great in his job and did more then it was expected from the task",
   },

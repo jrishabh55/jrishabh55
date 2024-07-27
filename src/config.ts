@@ -5,7 +5,7 @@ export const PROFILE = {
   name: "Rishabh Jain",
   email: "hello@rishabhjain.dev",
   title: "Software Engineer",
-  avatar: "/person/rishabh-home.webp",
+  avatar: "/person/rishabh-home-1x.webp",
 };
 
 export const SKILLS = [
@@ -157,7 +157,7 @@ export const portfolioMetaData: Metadata = {
 export const TESTIMONIALS = [
   {
     name: "Sujit Thakur",
-    avatar: "https://qph.cf2.quoracdn.net/main-thumb-52082719-200-hmoxnoeakszhnytdytcpldkcsxmvchim.jpeg",
+    avatar: "/person/SujitThakur.jpeg",
     title: "CEO & Founder, Deuglo",
     link: "https://www.deuglo.com/",
     content:
@@ -165,8 +165,7 @@ export const TESTIMONIALS = [
   },
   {
     name: "Varun Kumar",
-    avatar:
-      "https://images.crunchbase.com/image/upload/c_thumb,h_170,w_170,f_auto,g_face,z_0.7,b_white,q_auto:eco,dpr_2/w4ksankqw7bwhn5b6ioi",
+    avatar: "/person/VarunKumar.webp",
     title: "CEO, VK Soft Solutions",
     link: "https://vksoft.co.in/",
     content:
@@ -174,8 +173,7 @@ export const TESTIMONIALS = [
   },
   {
     name: "Siddharth Kothari",
-    avatar:
-      "https://images.squarespace-cdn.com/content/v1/5920bc42579fb390c0074e43/1568308589959-H6J9WGC1KLJE3GWMG5F4/Siddharth+Kothari.png?format=1500w",
+    avatar: "/person/SiddharthKothari.png",
     title: "CEO, Reactive Search",
     link: "https://www.reactivesearch.io/",
     content:

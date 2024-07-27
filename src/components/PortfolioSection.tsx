@@ -24,6 +24,7 @@ const PortfolioItem: FC<{ portfolio: Portfolio }> = ({ portfolio }) => {
         src={portfolio.image}
         alt={`Portfolio Image for ${portfolio.title}`}
         className="my-auto w-52 rounded-md object-contain md:w-40"
+        loading="lazy"
       />
       <div className="mt-auto flex max-w-full flex-col gap-y-4 justify-self-end p-4 text-gray-200 backdrop-blur-xl">
         <h3 className="text-lg font-bold">{portfolio.title}</h3>

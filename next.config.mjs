@@ -5,6 +5,15 @@ const nextConfig = {
       {
         hostname: "pagepro.co",
       },
+      {
+        hostname: "qph.cf2.quoracdn.net",
+      },
+      {
+        hostname: "images.crunchbase.com",
+      },
+      {
+        hostname: "images.squarespace-cdn.com",
+      },
     ],
   },
 };

@@ -10,7 +10,7 @@ const Skills = () => (
           key={skill.title}
           className="flex h-20 flex-col items-center justify-center gap-2 rounded-md border p-4 text-center backdrop-blur-xl sm:flex-row sm:justify-start sm:gap-6"
         >
-          <Image alt={skill.title} src={skill.logo} width={48} height={48} className={skill.className} />
+          <Image alt={skill.title} src={skill.logo} width={48} height={48} className={skill.className} loading="lazy" />
           <p className="hidden sm:inline-block">{skill.title}</p>
         </div>
       ))}

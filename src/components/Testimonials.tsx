@@ -5,7 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 const Testimonial: FC<{ testimonial: Testimonial }> = ({ testimonial }) => (
   <article className="flex flex-col items-center gap-4 rounded-lg border border-gray-800 p-4 backdrop-blur-2xl">
     <Avatar className="h-36 w-36">
-      <AvatarImage src={testimonial.avatar} />
+      <AvatarImage src={testimonial.avatar} loading="lazy" />
       <AvatarFallback>{testimonial.name}</AvatarFallback>
     </Avatar>
     <div className="flex flex-grow flex-col gap-2 text-center">

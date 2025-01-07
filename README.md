@@ -81,7 +81,7 @@
     width="350"
     align="left"
     src="https://github-readme-stats.vercel.app/api?username=jrishabh55&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=false"
-    alt="vanbeonhv"
+    alt="jrishabh55"
   />
 </div>
 
@@ -90,7 +90,7 @@
     width="380"
     align="right"
     src="https://github-readme-streak-stats.herokuapp.com/?user=jrishabh55&theme=tokyonight&hide_border=false"
-    alt="vanbeonhv"
+    alt="jrishabh55"
   />
 </p>
 
@@ -99,6 +99,6 @@
     width="350"
     align="left"
     src="https://github-readme-stats.vercel.app/api/top-langs/?username=jrishabh55&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=false&layout=compact"
-    alt="vanbeonhv"
+    alt="jrishabh55"
   />
 </div>
